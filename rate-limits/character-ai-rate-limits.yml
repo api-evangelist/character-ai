@@ -11,26 +11,41 @@ tags:
 - LLM
 - Chatbots
 - Personas
-- Generative AI
+- Consumer
 - Rate Limiting
 - Quotas
 - Throttling
-description: Placeholder rate-limit artifact for Character.AI. Replace with real limits once the pipeline
-  researches the provider's rate-limit documentation.
-notes: Initial scaffold — limits have not yet been reconciled against the provider's documentation.
+description: >-
+  Character.AI is a consumer chat product without a public developer API.
+  Practical rate limiting takes the form of in-app waits during peak demand
+  on the free tier (mitigated by the c.ai+ subscription tier which gets
+  priority access). No formal RPM/TPM developer limits are published.
+notes: >-
+  Free-tier users see longer wait times during peak load; c.ai+ subscribers
+  get priority. There is no public RPM / TPM specification.
 sources:
 - https://character.ai/
 responseCodes:
   throttled: 429
 limits:
-- name: Default
+- name: Free-Tier Throttling
   scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+  metric: in_app_wait
+  limit: variable, peak-load dependent
+  notes: Free users may experience increased wait times for chat responses during peak demand.
+- name: c.ai+ Priority Access
+  scope: account
+  metric: priority
+  limit: prioritized over free tier
+  notes: c.ai+ subscribers receive priority queuing and faster responses.
+- name: Developer API
+  scope: not_applicable
+  metric: not_offered
+  limit: not offered
+  notes: Character.AI does not publish a public developer API or its rate limits.
 policies:
-- name: Backoff Strategy
-  description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+- name: Subscribe for Priority
+  description: c.ai+ subscription mitigates wait-times during peak demand.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

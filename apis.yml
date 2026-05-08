@@ -3,7 +3,7 @@ url: https://raw.githubusercontent.com/api-evangelist/character-ai/refs/heads/ma
 name: Character.AI
 x-type: company
 description: >-
-  Character.AI is a conversational AI platform that lets users create and chat with AI personas. The Character.AI APIs expose character creation, conversation history, and model interaction.
+  Character.AI is a consumer conversational-AI platform that lets users create and chat with AI personas (Characters) via web and mobile apps. Character.AI does not publish a public developer API; product surfaces are accessed through the consumer apps. Community-maintained reverse-engineered clients exist but are unofficial and unsupported.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - AI
@@ -11,13 +11,49 @@ tags:
   - Chatbots
   - Personas
   - Generative AI
+  - Consumer
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: character-ai:character-ai-web-app
+    name: Character.AI Web Application
+    tags:
+      - Web
+      - Consumer
+      - Chat
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://character.ai/
+    baseURL: https://character.ai/
+    properties:
+      - url: https://character.ai/
+        type: Website
+      - url: https://book.character.ai/
+        type: Documentation
+    description: >-
+      Web client for chatting with Characters, creating new Characters, and managing rooms, voices, scenes, and personas. Internal endpoints are private and not part of a public developer surface.
+  - aid: character-ai:character-ai-mobile-app
+    name: Character.AI Mobile Apps
+    tags:
+      - Mobile
+      - iOS
+      - Android
+      - Consumer
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://character.ai/
+    baseURL: https://character.ai/
+    properties:
+      - url: https://apps.apple.com/us/app/character-ai-ai-powered-chat/id6444971575
+        type: AppStore
+      - url: https://play.google.com/store/apps/details?id=ai.character.app
+        type: GooglePlay
+    description: >-
+      iOS and Android mobile clients providing the same Character chat experience and creation flows.
 common:
   - type: Website
     url: https://character.ai/
+  - type: Documentation
+    url: https://book.character.ai/
   - type: Plans
     url: plans/character-ai-plans-pricing.yml
   - type: RateLimits

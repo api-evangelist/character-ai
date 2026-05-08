@@ -12,31 +12,85 @@ tags:
 - Chatbots
 - Personas
 - Generative AI
+- Consumer
 - Plans
-description: Placeholder plans/pricing artifact for Character.AI. Replace with real published pricing once
-  the pipeline researches the provider's plans page.
-notes: Initial scaffold — plans/pricing have not yet been reconciled against the provider's documentation.
+description: >-
+  Character.AI is a consumer subscription product, not a developer API. The
+  service offers a free tier (with rate-limited Character chat) and a paid
+  c.ai+ subscription that adds priority access, faster responses, early
+  access to features, and an exclusive community badge. There is no public
+  developer pricing surface to reconcile.
+notes: >-
+  Subscription pricing for c.ai+ is not reconciled here - confirm current
+  monthly / annual price on character.ai before quoting. There is no public
+  per-token / per-call developer pricing.
 sources:
 - https://character.ai/
+- https://book.character.ai/
 plans:
-- id: character-ai-default
-  name: To Be Reconciled
-  type: enterprise
-  description: Initial scaffold; replace with provider plan tiers (Free / Pro / Enterprise / pay-as-you-go,
-    etc.) once pricing is reconciled.
+- id: character-ai-free
+  name: Free
+  type: free
+  description: >-
+    Default consumer experience with rate-limited Character chat across web
+    and mobile, including Character creation and conversation history.
   entries:
-  - label: API Access
-    name: api_access
+  - label: Subscription
+    name: subscription
     type: flat
-    metric: varies
-    limit: -1
+    metric: month
+    limit: 1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: $0
+    userMultiplied: false
+  elements:
+  - name: Character Chat
+  - name: Character Creation
+  - name: Conversation History
+- id: character-ai-plus
+  name: c.ai+ (Plus)
+  type: subscription
+  description: >-
+    Paid consumer subscription that adds priority access during peak times,
+    faster response generation, early access to new features, and a c.ai+
+    community badge.
+  entries:
+  - label: Monthly Subscription
+    name: subscription_monthly
+    type: flat
+    metric: month
+    limit: 1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: see character.ai for current rate
+    userMultiplied: true
+  elements:
+  - name: Priority Access
+  - name: Faster Responses
+  - name: Early Access
+  - name: Community Badge
+- id: character-ai-developer
+  name: Public Developer API
+  type: usage
+  description: >-
+    Character.AI does not publish a public developer API. Programmatic
+    integration is not officially supported.
+  entries:
+  - label: Developer API
+    name: developer_api
+    type: flat
+    metric: not_offered
+    limit: 0
     timeFrame: usage
     geo: global
     unit: 1
-    price: see https://character.ai/
+    price: not offered
     userMultiplied: false
   elements:
-  - name: Pending Reconciliation
+  - name: Not Offered
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
