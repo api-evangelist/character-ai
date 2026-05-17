@@ -1,7 +1,7 @@
 aid: character-ai
 url: https://raw.githubusercontent.com/api-evangelist/character-ai/refs/heads/main/apis.yml
 name: Character.AI
-x-type: company
+kind: company
 description: >-
   Character.AI is a consumer conversational-AI platform that lets users create and chat with AI personas (Characters) via web and mobile apps. Character.AI does not publish a public developer API; product surfaces are accessed through the consumer apps. Community-maintained reverse-engineered clients exist but are unofficial and unsupported.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
