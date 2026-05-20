@@ -50,6 +50,10 @@ apis:
     description: >-
       iOS and Android mobile clients providing the same Character chat experience and creation flows.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/character-ai
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/character-ai
   - type: Website
     url: https://character.ai/
   - type: Documentation
