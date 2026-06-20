@@ -4,7 +4,7 @@ name: Character.AI
 kind: company
 description: >-
   Character.AI is a consumer conversational-AI platform that lets users create and chat with AI personas (Characters) via web and mobile apps. Character.AI does not publish a public developer API; product surfaces are accessed through the consumer apps. Community-maintained reverse-engineered clients exist but are unofficial and unsupported.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - AI
   - LLM
@@ -22,7 +22,7 @@ apis:
       - Web
       - Consumer
       - Chat
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://character.ai/
     baseURL: https://character.ai/
     properties:
@@ -39,7 +39,7 @@ apis:
       - iOS
       - Android
       - Consumer
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://character.ai/
     baseURL: https://character.ai/
     properties:
