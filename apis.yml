@@ -50,6 +50,8 @@ apis:
     description: >-
       iOS and Android mobile clients providing the same Character chat experience and creation flows.
 common:
+  - type: DomainSecurity
+    url: security/character-ai-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/character-ai
   - type: LinkedIn
@@ -64,6 +66,8 @@ common:
     url: rate-limits/character-ai-rate-limits.yml
   - type: FinOps
     url: finops/character-ai-finops.yml
+  - url: https://blog.character.ai/feed
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
