@@ -1,4 +1,4 @@
-# Character.AI (character-ai)
+# Character.AI
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,48 +66,98 @@
 
 Character.AI is a consumer conversational-AI platform that lets users create and chat with AI personas (Characters) via web and mobile apps. Character.AI does not publish a public developer API; product surfaces are accessed through the consumer apps. Community-maintained reverse-engineered clients exist but are unofficial and unsupported.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/character-ai/refs/heads/main/apis.yml)
+**Areas:** Artificial Intelligence · LLM · Chatbots · Personas · Generative AI · Consumer · Conversational AI
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=character-ai-api-evangelist&utm_content=repo)
+## Character.AI on APIs.io
 
-## Type
+Everything profiled for Character.AI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/character-ai/](https://apis.io/providers/character-ai/)** — or go straight to one of the APIs or properties below.
 
-- **x-type:** company
+### Published properties
 
-## Tags:
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
- - AI, LLM, Chatbots, Personas, Generative AI, Consumer
+#### Security (1)
 
-## Timestamps
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+- [Character Ai Domain Security](https://apis.io/security/character-ai/character-ai-domain-security/)
 
-## APIs
+#### Plans and pricing (1)
 
-| API | Description |
-|---|---|
-| Character.AI Web Application | Consumer web client at character.ai. No public developer surface. |
-| Character.AI Mobile Apps | iOS / Android mobile clients. No public developer surface. |
+Published plans, tiers and prices.
 
-## Common Properties
+- [Character Ai Plans Pricing](https://apis.io/plans/character-ai/character-ai-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Character Ai Rate Limits](https://apis.io/rate-limits/character-ai/character-ai-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Character Ai Finops](https://apis.io/finops/character-ai/character-ai-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://character.ai/)
 - [Documentation](https://book.character.ai/)
-- [Plans](plans/character-ai-plans-pricing.yml) — API Commons Plans 0.1
-- [RateLimits](rate-limits/character-ai-rate-limits.yml) — API Commons Rate Limits 0.1
-- [FinOps](finops/character-ai-finops.yml) — FOCUS-aligned FinOps Framework 1.0
+- [Blog](https://blog.character.ai/feed)
+- [GitHub](https://github.com/character-ai)
 
-## Artifacts
+## API Evangelist rating
 
-| Artifact | Path | Notes |
-|---|---|---|
-| Plans | `plans/character-ai-plans-pricing.yml` | Free tier + c.ai+ subscription. No public developer pricing. |
-| Rate Limits | `rate-limits/character-ai-rate-limits.yml` | Consumer in-app waits during peak load; c.ai+ priority. |
-| FinOps | `finops/character-ai-finops.yml` | FOCUS-aligned, treated as consumer SaaS subscription. |
+**Kin Score 8.3** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 7.9 |
 
-**FN:** Kin Lane
+**Agent readiness 0.6** — human-only
 
-**Email:** kin@apievangelist.com
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.5** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/character-ai/](https://apis.io/providers/character-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Character.AI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/character-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
